@@ -191,11 +191,9 @@ const GlossaryTable = () => {
   return (
     <>
       <Head>
-        <title>Django Interview Questions & Answer | Unstop Computer</title>
-        <meta
-          name="description"
-          content="Explore a comprehensive computer dictionary featuring all computer-related terms. Unstop Computer offers a wealth of definitions and explanations to enhance your understanding of technology and computing. Dive into the world of computers with our expansive dictionary"
-        />
+      <title>Django Interview Question | Unstop Computer</title>
+        <meta name="description" content="Here, you'll find a treasure trove of questions covering everything from programming languages to data structures and algorithms." />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta charset="UTF-8" />
@@ -206,7 +204,7 @@ const GlossaryTable = () => {
         />
         <link
           rel="canonical"
-          href="https://unstopcomputer.vercel.app/interview-question/html"
+          href="https://unstopcomputer.vercel.app/interview-question/django"
         />
         <meta
           property="og:image"
@@ -217,9 +215,9 @@ const GlossaryTable = () => {
         <meta property="og:image:height" content="150" />
         <meta
           property="og:title"
-          content="Computer Dictionary - ALl computer related terms | Unstop Computer"
+          content="Django Interview Question | Unstop Computer"
         />
-        <meta name="description" content="" />
+       <meta property="og:description" content="Here, you'll find a treasure trove of questions covering everything from programming languages to data structures and algorithms." />
       </Head>
       <QueLayout>
         <section id="content-wrapper">

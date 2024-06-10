@@ -3,21 +3,33 @@ import Head from "next/head";
 export default function Home() {
     return <QueLayout>
         <Head>
-        <title>MERN Stack Interview Question with answer | Unstop Computer</title>
-        <meta name="description" content="Here are Top MERN stack interview questions along with their answers." />
+        <title>MERN Stack Interview Question | Unstop Computer</title>
+        <meta name="description" content="Here, you'll find a treasure trove of questions covering everything to mern stack." />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
-        <meta name="Keywords" content="mern stack interview question,HTML,Unstop Computer.in,UnstopComputers, Unstop Computer, UnstopComputers.in Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, Node.js, React, Vue, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website" />
-        <link rel="canonical" href="https://unstopcomputer.vercel.app/interview-question/mern-stack" />
-                <meta property="og:image" content="https://unstopcomputer.vercel.app/Images/logo.png" />
+        <meta
+          name="Keywords"
+          content="HTML,Unstop Computer.in,UnstopComputers, Unstop Computer, UnstopComputers.in Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, Node.js, React, Vue, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"
+        />
+        <link
+          rel="canonical"
+          href="https://unstopcomputer.vercel.app/interview-question/mern-stack"
+        />
+        <meta
+          property="og:image"
+          content="https://unstopcomputer.vercel.app/Images/logo.png"
+        />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="150" />
         <meta property="og:image:height" content="150" />
-        <meta property="og:title" content="MERN Stack Interview Question with answer | Unstop Computer" />
-        <meta property="og:description" content="Here are Top MERN stack interview questions along with their answers." />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+        <meta
+          property="og:title"
+          content="MERN Stack Interview Question | Unstop Computer"
+        />
+       <meta property="og:description" content="Here, you'll find a treasure trove of questions covering everything to mern stack." />
         </Head>
         <section id="content-wrapper">
             <div className="row">
