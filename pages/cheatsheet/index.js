@@ -61,6 +61,12 @@ export default function Home() {
       category: "Database",
       link: "/cheatsheet/database/mongodb",
     },
+    {
+      id: 10,
+      name: "ChatGpt",
+      category: "Tools",
+      link: "/cheatsheet/tools/chatgpt",
+    },
     // Add more subjects here
   ];
   // Get unique categories
@@ -88,19 +94,27 @@ export default function Home() {
         <meta property="og:title" content="website template" />
       </Head>
       <section id="content-wrapper">
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          <div className="container text-center mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
+        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto items-center sm:mb-2 -mx-2">
+          <div className="container grid place-items-center text-center mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
             <div className="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center">
               <div className="relative xl:container">
-                <h2 className=" text-blue-700 text-4xl text-center sm:text-xl md:text-6xl lg:text-left xl:text-5xl dark:text-blue">
+                <h2 className=" text-blue-700 text-4xl text-center sm:text-xl md:text-6xl lg:text-left xl:text-4xl dark:text-blue">
                   Computer Science Cheat Sheet{" "}
                 </h2>{" "}
                 <br className="lg:block hidden" />
               </div>
-              <p className="mt-2 items-center">The Computer Science cheatsheet offers concise summaries of all major topics. It aids in understanding fundamental principles of Computer Science such as algorithms, data structures, programming languages, and computer architecture. This resource serves as a straightforward, quickly accessible reference suitable for educators, students, and professionals alike.</p>
+              <p className="mt-2">
+                The Computer Science cheatsheet offers concise summaries of all
+                major topics. It aids in understanding fundamental principles of
+                Computer Science such as algorithms, data structures,
+                programming languages, and computer architecture. This resource
+                serves as a straightforward, quickly accessible reference
+                suitable for educators, students, and professionals alike.
+              </p>
             </div>
           </div>
-          <div className="flex flex-col items-center md:flex-row mb-6">
+          <div className="flex items-center mx-auto m-2">
+            <div className="flex flex-col items-center md:flex-row mb-6">
               {categories.map((category) => (
                 <button
                   key={category}
@@ -118,6 +132,7 @@ export default function Home() {
                 Clear Filter
               </button>
             </div>
+          </div>
           <hr />
           {/* Display filtered subjects */}
           {filteredSubjects.map((subject) => (

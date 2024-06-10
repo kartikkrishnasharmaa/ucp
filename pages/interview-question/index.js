@@ -169,23 +169,26 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center md:flex-row mb-6">
-              {categories.map((category) => (
+            <div className="flex items-center mx-auto m-2">
+
+              <div className="flex flex-col items-center md:flex-row mb-6">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
+                    onClick={() => setSelectedCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
+                {/* Add a button to clear the filter */}
                 <button
-                  key={category}
                   className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() => setSelectedCategory(null)}
                 >
-                  {category}
+                  Clear Filter
                 </button>
-              ))}
-              {/* Add a button to clear the filter */}
-              <button
-                className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
-                onClick={() => setSelectedCategory(null)}
-              >
-                Clear Filter
-              </button>
+              </div>
             </div>
 
             {/* Display filtered subjects */}
