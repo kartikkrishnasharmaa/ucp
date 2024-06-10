@@ -4,13 +4,33 @@ const networking = () => {
     return (
         <McqLayout>
             <Head>
-                <title>Networking Multiple Choice Question | Unstop Computer</title>
-                <meta name="description" content="An Online place where you can write code and test your code in real time without installing any additional softwares." />
-                <link rel="icon" href="/favicon.ico" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="theme-color" content="#000000" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="webiste template" />
+            <title>Networking Multiple Choice Question | Unstop Computer</title>
+        <meta name="description" content="Explore a collection of multiple-choice questions (MCQs) on  networking, covering key concepts and features. Test your knowledge and deepen your understanding of networking  with our curated list." />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="Keywords"
+          content="HTML,Unstop Computer.in,UnstopComputers, Unstop Computer, UnstopComputers.in Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, Node.js, React, Vue, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website"
+        />
+        <link
+          rel="canonical"
+          href="https://unstopcomputer.vercel.app/mcq/networking-mcq"
+        />
+        <meta
+          property="og:image"
+          content="https://unstopcomputer.vercel.app/Images/logo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="150" />
+        <meta property="og:image:height" content="150" />
+        <meta
+          property="og:title"
+          content="Networking Multiple Choice Question | Unstop Computer"
+        />
+       <meta property="og:description" content="Explore a collection of multiple-choice questions (MCQs) on networking , covering key concepts and features. Test your knowledge and deepen your understanding of networking  with our curated list." />
             </Head>
             <section id="content-wrapper">
                 <div>
