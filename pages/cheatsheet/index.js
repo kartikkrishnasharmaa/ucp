@@ -97,7 +97,7 @@ export default function Home() {
                 </h2>{" "}
                 <br className="lg:block hidden" />
               </div>
-              <p className="mt-2 items-center">Over 100+ Free Cheat Sheets </p>
+              <p className="mt-2 items-center">The Computer Science cheatsheet offers concise summaries of all major topics. It aids in understanding fundamental principles of Computer Science such as algorithms, data structures, programming languages, and computer architecture. This resource serves as a straightforward, quickly accessible reference suitable for educators, students, and professionals alike.</p>
             </div>
           </div>
           <div className="flex md:flex-row mb-6 ">
