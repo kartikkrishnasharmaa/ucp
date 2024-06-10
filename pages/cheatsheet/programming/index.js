@@ -9,9 +9,8 @@ export default function Home() {
         { id: 2, name: 'Asp.Net', link: '/cheatsheet/programming/aspnet' },
         { id: 3, name: 'Bootstrap', link: '/cheatsheet/programming/bootstrap' },
         { id: 4, name: 'CSS', link: '/cheatsheet/programming/css' },
-        { id: 5, name: 'Django', link: '/cheatsheet/programming/django' },
-        { id: 6, name: 'Express Js', link: '/cheatsheet/programming/express' },
-        { id: 7, name: 'Go Language', link: '/cheatsheet/programming/go-language' },
+        { id: 5, name: 'Express Js', link: '/cheatsheet/programming/express' },
+        { id: 6, name: 'Go Language', link: '/cheatsheet/programming/go-language' },
 
 
 
