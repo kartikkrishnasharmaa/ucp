@@ -235,7 +235,7 @@ animation: bounce 300ms linear 2s infinite alternate-reverse forwards normal;
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {codeBlocks.map((block, index) => (
                 <div key={index} className="col-span-1">
                   <CodeBlock language={block.language} code={block.code} />
