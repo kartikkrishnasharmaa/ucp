@@ -17,19 +17,62 @@ const CheatSidebar = () => {
     };
 
     const mcqsubjects = [
-        { id: 1, name: 'Programming', link: '/cheatsheet/programming' },
-        { id: 1, name: '⨠ Angular Js', link: '/cheatsheet/programming/angularjs' },
-        { id: 2, name: '⨠ Asp.Net', link: '/cheatsheet/programming/aspnet' },
-        { id: 3, name: '⨠ Bootstrap', link: '/cheatsheet/programming/bootstrap' },
-        { id: 4, name: '⨠ CSS', link: '/cheatsheet/programming/css' },
-        { id: 5, name: '⨠ Express Js', link: '/cheatsheet/programming/express' },
-        { id: 6, name: '⨠ Go Language', link: '/cheatsheet/programming/go-language' },
-        { id: 2, name: 'Softwares', link: '/cheatsheet/software' },
-        { id: 1, name: '⨠ Visual Studio', link: '/cheatsheet/software/visual-studio' },
-        { id: 2, name: '⨠ VLC Media Player', link: '/cheatsheet/software/vlc-media' },
-   
+        {
+          id: 1,
+          name: "Angular Js",
+          category: "Programming",
+          link: "/cheatsheet/programming/angularjs",
+        },
+        {
+          id: 2,
+          name: "Asp.Net",
+          category: "Programming",
+          link: "/cheatsheet/programming/aspnet",
+        },
+        {
+          id: 3,
+          name: "Bootstrap",
+          category: "Programming",
+          link: "/cheatsheet/programming/bootstrap",
+        },
+        {
+          id: 4,
+          name: "CSS",
+          category: "Programming",
+          link: "/cheatsheet/programming/css",
+        },
+        {
+          id: 5,
+          name: "Express Js",
+          category: "Programming",
+          link: "/cheatsheet/programming/express",
+        },
+        {
+          id: 6,
+          name: "Go Language",
+          category: "Programming",
+          link: "/cheatsheet/programming/go-language",
+        },
+        {
+          id: 7,
+          name: "Visual Studio",
+          category: "Softwares",
+          link: "/cheatsheet/software/visual-studio",
+        },
+        {
+          id: 8,
+          name: "VLC Media Player",
+          category: "Softwares",
+          link: "/cheatsheet/software/vlc-media",
+        },
+        {
+          id: 9,
+          name: "MongoDB",
+          category: "Database",
+          link: "/cheatsheet/database/mongodb",
+        },
         // Add more subjects here
-    ];
+      ];
 
     useEffect( () => {
         toggle ? openNav() : closeNav();
