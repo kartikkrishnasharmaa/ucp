@@ -100,24 +100,24 @@ export default function Home() {
               <p className="mt-2 items-center">The Computer Science cheatsheet offers concise summaries of all major topics. It aids in understanding fundamental principles of Computer Science such as algorithms, data structures, programming languages, and computer architecture. This resource serves as a straightforward, quickly accessible reference suitable for educators, students, and professionals alike.</p>
             </div>
           </div>
-          <div className="flex md:flex-row mb-6 ">
-            {categories.map((category) => (
+          <div className="flex flex-col items-center md:flex-row mb-6">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
+                  onClick={() => setSelectedCategory(category)}
+                >
+                  {category}
+                </button>
+              ))}
+              {/* Add a button to clear the filter */}
               <button
-                key={category}
-                className={`bg-white ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-white rounded-3xl`}
-                onClick={() => setSelectedCategory(category)}
+                className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
+                onClick={() => setSelectedCategory(null)}
               >
-                {category}
+                Clear Filter
               </button>
-            ))}
-            {/* Add a button to clear the filter */}
-            <button
-              className={`bg-white ml-2 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-white rounded-3xl`}
-              onClick={() => setSelectedCategory(null)}
-            >
-              Clear Filter
-            </button>
-          </div>
+            </div>
           <hr />
           {/* Display filtered subjects */}
           {filteredSubjects.map((subject) => (

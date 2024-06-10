@@ -54,43 +54,43 @@ export default function Home() {
       category: "Software Development",
       link: "/interview-question/python",
     },
-  {
-    id: 9,
-    name: "MS Excel",
-    category: "Data Science",
-    link: "/interview-question/excel",
-  },
-  {
-    id: 10,
-    name: "Microsoft Power BI",
-    category: "Data Science",
-    link: "/interview-question/powerbi",
-  },
-  {
-    id: 11,
-    name: "Flutter",
-    category: "Mobile Development",
-    link: "/interview-question/flutter",
-  },
-  {
-    id: 12,
-    name: "React Native",
-    category: "Mobile Development",
-    link: "/interview-question/react-native",
-  },
-  {
-    id: 13,
-    name: "Android Developer",
-    category: "Mobile Development",
-    link: "/interview-question/android-developer",
-  },
-  {
-    id: 14,
-    name: "PHP",
-    category: "Web Development",
-    link: "/interview-question/php",
-  },
-];
+    {
+      id: 9,
+      name: "MS Excel",
+      category: "Data Science",
+      link: "/interview-question/excel",
+    },
+    {
+      id: 10,
+      name: "Microsoft Power BI",
+      category: "Data Science",
+      link: "/interview-question/powerbi",
+    },
+    {
+      id: 11,
+      name: "Flutter",
+      category: "Mobile Development",
+      link: "/interview-question/flutter",
+    },
+    {
+      id: 12,
+      name: "React Native",
+      category: "Mobile Development",
+      link: "/interview-question/react-native",
+    },
+    {
+      id: 13,
+      name: "Android Developer",
+      category: "Mobile Development",
+      link: "/interview-question/android-developer",
+    },
+    {
+      id: 14,
+      name: "PHP",
+      category: "Web Development",
+      link: "/interview-question/php",
+    },
+  ];
 
   // Get unique categories
   const categories = [
@@ -104,7 +104,7 @@ export default function Home() {
 
   return (
     <QueLayout>
-       <Head>
+      <Head>
         <title>
           Interview Question- All Computer related terms| Unstop Computer
         </title>
@@ -149,25 +149,31 @@ export default function Home() {
               <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center">
                 <div className="relative xl:container">
                   <h2 className=" text-blue-700 text-4xl text-center sm:text-xl md:text-4xl lg:w-auto lg:text-left xl:text-4xl dark:text-blue">
-                   Top Interview Question with Answer
+                    Top Interview Question with Answer
                   </h2>{" "}
                   <br className="lg:block hidden" />
                 </div>
                 <p>
-                Welcome to our Interview Questions and Answers hub for Computer Science enthusiasts! Here, you'll find a treasure trove of questions covering everything from programming languages to data structures and algorithms. Whether you're gearing up for a job interview or simply exploring new concepts, we've got you covered. Dive in, test your knowledge, and embark on a journey through the exciting world of Computer Science. Happy learning!
-               </p>
-               <p className="items-center mt-7 text-center">Select your course and start learning now</p>
+                  Welcome to our Interview Questions and Answers hub for
+                  Computer Science enthusiasts! Here, you'll find a treasure
+                  trove of questions covering everything from programming
+                  languages to data structures and algorithms. Whether you're
+                  gearing up for a job interview or simply exploring new
+                  concepts, we've got you covered. Dive in, test your knowledge,
+                  and embark on a journey through the exciting world of Computer
+                  Science. Happy learning!
+                </p>
+                <p className="items-center mt-7 text-center">
+                  Select your course and start learning now
+                </p>
               </div>
-              
             </div>
-           
 
-            <div className="flex md:flex-row mb-6">
-           
+            <div className="flex flex-col items-center md:flex-row mb-6">
               {categories.map((category) => (
                 <button
                   key={category}
-                  className={`bg-white ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-white rounded-3xl`}
+                  className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
                   onClick={() => setSelectedCategory(category)}
                 >
                   {category}
@@ -175,7 +181,7 @@ export default function Home() {
               ))}
               {/* Add a button to clear the filter */}
               <button
-                className={`bg-white ml-2 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-white rounded-3xl`}
+                className={`bg-white mt-1 md:mt-0 md:ml-1 hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-white rounded-2xl`}
                 onClick={() => setSelectedCategory(null)}
               >
                 Clear Filter
@@ -205,8 +211,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-            ))} 
-            
+            ))}
           </div>
         </div>
       </section>
