@@ -57,11 +57,7 @@ const Footer = () => {
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
 
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <Link href="https://www.facebook.com/profile.php?id=100089765055704" className="text-white">
-              <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </Link>
+
             <Link href="https://www.instagram.com/unstopcomputer" className="ml-3 text-white">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
