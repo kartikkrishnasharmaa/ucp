@@ -43,6 +43,35 @@ const compiler = () => {
           src="/Images/prep.png"
         />
       </Link>
+
+      <section className="px-8 body-font">
+        <div className="container mx-auto px-5 flex md:flex-row flex-col items-center">
+          <div className="bg-transparent mr-4 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <Image
+              className="object-center rounded"
+              alt="hero-banner"
+              width={450}
+              height={400}
+              src="/Images/onlinetest.png"
+            />
+          </div>
+          <div className="lg:flex-grow ml-8 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-700">
+            Welcome to Our Online Computer Science Quiz Platform
+            </h1>
+            <p className="text-blue-700 mb-8 leading-relaxed">
+            Test your knowledge across various subjects including algorithms, data structures, programming languages, and more. Whether you're a student, professional, or simply curious about the field, our quizzes offer an engaging way to learn and challenge yourself.
+            </p>
+            <div className="flex space-x-1">
+              <Link href="/test">
+                <button className="hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-white rounded-3xl">
+                  Explore Now
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
