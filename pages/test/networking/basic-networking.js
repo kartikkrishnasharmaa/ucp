@@ -158,7 +158,6 @@ const questions = [
       "A unique identifier assigned to network interfaces for communications on the physical network segment",
   },
 
-
   // Add more questions here...
 ];
 
@@ -184,7 +183,12 @@ const IndexPage = () => {
   };
 
   const handleShowResults = () => {
-    setShowResults(true);
+    if (answers.length === questions.length && !answers.includes(undefined)) {
+      setShowResults(true);
+    } else {
+      // Handle case where not all questions are answered
+      alert("Please answer all questions before submitting.");
+    }
   };
 
   const handleCloseResults = () => {
@@ -195,12 +199,12 @@ const IndexPage = () => {
   const handleSeeResult = () => {
     setShowAnswers(true);
   };
+
   const handleResetTest = () => {
     setAnswers([]);
     setShowResults(false);
     setShowAnswers(false);
   };
-
   return (
     <>
       <Head>
@@ -234,18 +238,18 @@ const IndexPage = () => {
           content="This privacy policy explains how we use and protect any information that you provide when you use this website."
         />
       </Head>
-      <div className="box-border h-full w-auto p-10 m-6 border-4 shadow-xl shadow-cyan-600 hover:shadow-indigo-700">
+      <div className="box-border h-full w-auto p-3 m-3 border-4 shadow-xl shadow-cyan-600 hover:shadow-indigo-700">
         <h1 className="title-font sm:text-4xl text-center text-3xl mb-10 font-medium text-blue-700">
           Basic Computer Networking Quiz
         </h1>
         {questions.map((question, index) => (
           <div key={index} className="border p-4 rounded-md mb-4">
-            <h4 className="font-semibold text-xl mb-2">{question.question}</h4>
-            <div className="flex flex-col space-y-4">
+            <h4 className="font-semibold text-xl mb-2">Q.{index + 1} {question.question}</h4>
+            <div className="flex flex-col ml-2 space-y-4">
               {question.options.map((option, optionIndex) => (
                 <label
                   key={optionIndex}
-                  className="flex items-center space-x-2 cursor-pointer"
+                  className="flex items-center space-x-1 cursor-pointer"
                 >
                   <input
                     type="radio"
@@ -254,7 +258,7 @@ const IndexPage = () => {
                     className="hidden"
                   />
                   <span
-                    className={`border rounded-full w-6 h-6 flex items-center justify-center ${
+                    className={`border rounded-full w-4 h-4 flex items-center justify-center ${
                       answers[index] === option
                         ? "border-green-500 bg-green-500"
                         : "border-gray-500 hover:border-blue-500"
