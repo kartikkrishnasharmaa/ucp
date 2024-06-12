@@ -104,7 +104,7 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-20 mr-16">
+        <div className="hidden md:flex space-x-16 mr-16">
           {/* Main Navbar Items */}
           <NavItem><Link href="/">Home</Link>
             </NavItem>
@@ -113,6 +113,8 @@ const Header = () => {
             <NavItem><Link href="/cheatsheet">CheatSheet</Link>
             </NavItem> 
           <NavItem><Link href="/mcq">MCQ</Link>
+            </NavItem>
+            <NavItem><Link href="/test">Test</Link>
             </NavItem>
             <NavItem><Link href="/interview-question">Interview Preparation</Link>
             </NavItem>
@@ -130,6 +132,8 @@ const Header = () => {
             <NavItem><Link href="/cheatsheet">CheatSheet</Link>
             </NavItem> 
           <NavItem><Link href="/mcq">MCQ</Link>
+            </NavItem>
+            <NavItem><Link href="/test">Test</Link>
             </NavItem>
             <NavItem><Link href="/interview-question">Interview Preparation</Link>
             </NavItem>
