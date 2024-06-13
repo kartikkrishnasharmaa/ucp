@@ -8,9 +8,53 @@ const privacypolicy = () => {
   const mcqsubjects = [
     {
       id: 1,
-      name: "Basic Networking",
-      category: "Computer Science",
+      name: "Basic Networking Test",
       link: "/test/networking/basic-networking",
+    },
+    {
+      id: 2,
+      name: "Network Topology Test",
+      link: "/test/networking/network-topology",
+    },
+    {
+      id: 3,
+      name: "Network Protocols Test",
+      link: "/test/networking/protocol",
+    },
+    {
+      id: 4,
+      name: "Network Security Test",
+      link: "/test/networking/security",
+    },
+    {
+      id: 5,
+      name: "IP Addressing Test",
+      link: "/test/networking/ip-address",
+    },
+    {
+      id: 6,
+      name: "Routing and Switching Test",
+      link: "/test/networking/route-and-switch",
+    },
+    {
+      id: 7,
+      name: "Network Troubleshooting Test",
+      link: "/test/networking/network-troubleshoot",
+    },
+    {
+      id: 8,
+      name: "Wireless Networking Test",
+      link: "/test/networking/wireless",
+    },
+    {
+      id: 9,
+      name: "Cloud Networking Test",
+      link: "/test/networking/cloud-networking",
+    },
+    {
+      id: 10,
+      name: "Emerging Technologies Test",
+      link: "/test/networking/emerging-technology",
     },
   ];
 
