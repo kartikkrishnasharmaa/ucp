@@ -4,14 +4,361 @@ import Head from "next/head";
 
 const questions = [
   {
-    question: "",
+    question: "What is the primary purpose of a firewall in network security?",
     options: [
-      "",
-      "",
-      "",
-      ""  
+      "To monitor and control incoming and outgoing network traffic",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
     ],
-    correctAnswer: "",
+    correctAnswer:
+      "To monitor and control incoming and outgoing network traffic",
+  },
+
+  {
+    question:
+      "Which type of attack involves flooding a network or server with excessive traffic to disrupt its normal operation?",
+    options: [
+      "DDoS (Distributed Denial of Service)",
+      "Phishing",
+      "Spoofing",
+      "Man-in-the-Middle",
+    ],
+    correctAnswer: "DDoS (Distributed Denial of Service)",
+  },
+
+  {
+    question: "What is the purpose of encryption in network security?",
+    options: [
+      "To secure data by converting it into a form that can only be read with a decryption key",
+      "To filter incoming and outgoing network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To secure data by converting it into a form that can only be read with a decryption key",
+  },
+
+  {
+    question:
+      "Which protocol is commonly used for secure remote access to a network?",
+    options: [
+      "VPN (Virtual Private Network)",
+      "SSH (Secure Shell)",
+      "HTTPS (Hypertext Transfer Protocol Secure)",
+      "IPSec (Internet Protocol Security)",
+    ],
+    correctAnswer: "VPN (Virtual Private Network)",
+  },
+
+  {
+    question:
+      "What is the purpose of intrusion detection systems (IDS) in network security?",
+    options: [
+      "To monitor network traffic for suspicious activity or security policy violations",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To monitor network traffic for suspicious activity or security policy violations",
+  },
+
+  {
+    question:
+      "Which type of attack involves tricking individuals into disclosing sensitive information such as passwords or credit card numbers?",
+    options: [
+      "Phishing",
+      "DDoS (Distributed Denial of Service)",
+      "Spoofing",
+      "Man-in-the-Middle",
+    ],
+    correctAnswer: "Phishing",
+  },
+
+  {
+    question:
+      "What is the purpose of access control lists (ACLs) in network security?",
+    options: [
+      "To control which network traffic is allowed or denied based on specified criteria",
+      "To monitor network traffic in real-time",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To control which network traffic is allowed or denied based on specified criteria",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to authenticate and authorize users and devices connecting to a network?",
+    options: [
+      "802.1X",
+      "WPA (Wi-Fi Protected Access)",
+      "MAC Filtering",
+      "WEP (Wired Equivalent Privacy)",
+    ],
+    correctAnswer: "802.1X",
+  },
+
+  {
+    question:
+      "What is the purpose of network segmentation in network security?",
+    options: [
+      "To isolate different parts of a network to contain security breaches",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To isolate different parts of a network to contain security breaches",
+  },
+
+  {
+    question:
+      "Which protocol is used for secure communication between web browsers and web servers?",
+    options: [
+      "HTTPS (Hypertext Transfer Protocol Secure)",
+      "SSH (Secure Shell)",
+      "VPN (Virtual Private Network)",
+      "IPSec (Internet Protocol Security)",
+    ],
+    correctAnswer: "HTTPS (Hypertext Transfer Protocol Secure)",
+  },
+  {
+    question:
+      "What is the primary purpose of a VPN (Virtual Private Network) in network security?",
+    options: [
+      "To create a secure and encrypted connection over a public network",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To create a secure and encrypted connection over a public network",
+  },
+
+  {
+    question:
+      "Which type of attack involves intercepting communication between two parties to steal or manipulate data?",
+    options: [
+      "Man-in-the-Middle (MitM)",
+      "Phishing",
+      "Spoofing",
+      "DDoS (Distributed Denial of Service)",
+    ],
+    correctAnswer: "Man-in-the-Middle (MitM)",
+  },
+
+  {
+    question: "What is the purpose of antivirus software in network security?",
+    options: [
+      "To detect and remove malware from computers and networks",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer: "To detect and remove malware from computers and networks",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to prevent unauthorized access to a wireless network based on the MAC addresses of devices?",
+    options: [
+      "MAC Filtering",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "Intrusion Prevention System (IPS)",
+    ],
+    correctAnswer: "MAC Filtering",
+  },
+
+  {
+    question: "What is the purpose of a honeypot in network security?",
+    options: [
+      "To attract and trap attackers to gather information about their tactics",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To attract and trap attackers to gather information about their tactics",
+  },
+
+  {
+    question:
+      "Which protocol is commonly used for securely accessing and managing network devices such as routers and switches?",
+    options: [
+      "SSH (Secure Shell)",
+      "HTTPS (Hypertext Transfer Protocol Secure)",
+      "VPN (Virtual Private Network)",
+      "IPSec (Internet Protocol Security)",
+    ],
+    correctAnswer: "SSH (Secure Shell)",
+  },
+
+  {
+    question:
+      "What is the primary function of a WAF (Web Application Firewall) in network security?",
+    options: [
+      "To protect web applications from common web-based attacks",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer: "To protect web applications from common web-based attacks",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to prevent unauthorized access to a network by requiring users to provide multiple forms of authentication?",
+    options: [
+      "Multi-factor authentication (MFA)",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "Intrusion Prevention System (IPS)",
+    ],
+    correctAnswer: "Multi-factor authentication (MFA)",
+  },
+
+  {
+    question: "What is the purpose of data encryption in network security?",
+    options: [
+      "To protect sensitive information from unauthorized access",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer: "To protect sensitive information from unauthorized access",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to detect and block malicious traffic based on predefined rules or signatures?",
+    options: [
+      "Intrusion Prevention System (IPS)",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "MAC Filtering",
+    ],
+    correctAnswer: "Intrusion Prevention System (IPS)",
+  },
+  {
+    question: "What is the purpose of a proxy server in network security?",
+    options: [
+      "To act as an intermediary between clients and servers, providing security and anonymity",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To act as an intermediary between clients and servers, providing security and anonymity",
+  },
+
+  {
+    question:
+      "Which type of attack involves sending unsolicited messages to trick individuals into revealing sensitive information?",
+    options: ["Spamming", "Phishing", "Spoofing", "Man-in-the-Middle (MitM)"],
+    correctAnswer: "Phishing",
+  },
+
+  {
+    question:
+      "What is the purpose of a DMZ (Demilitarized Zone) in network security?",
+    options: [
+      "To segregate and protect public-facing servers from the internal network",
+      "To encrypt network traffic",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To segregate and protect public-facing servers from the internal network",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to prevent unauthorized access to a network by disguising its true identity?",
+    options: [
+      "Spoofing",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "Intrusion Prevention System (IPS)",
+    ],
+    correctAnswer: "Spoofing",
+  },
+
+  {
+    question:
+      "What is the primary function of an IDS (Intrusion Detection System) in network security?",
+    options: [
+      "To detect and alert on suspicious activity or potential security breaches",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To detect and alert on suspicious activity or potential security breaches",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to prevent unauthorized access to a network by inspecting and filtering incoming and outgoing traffic based on predefined criteria?",
+    options: [
+      "Firewall",
+      "MAC Filtering",
+      "Multi-factor authentication (MFA)",
+      "Encryption",
+    ],
+    correctAnswer: "Firewall",
+  },
+
+  {
+    question:
+      "What is the purpose of network segmentation in network security?",
+    options: [
+      "To isolate different parts of a network to contain security breaches",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To isolate different parts of a network to contain security breaches",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to verify the integrity and authenticity of data transmitted over a network?",
+    options: [
+      "Digital signatures",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "Intrusion Prevention System (IPS)",
+    ],
+    correctAnswer: "Digital signatures",
+  },
+
+  {
+    question: "What is the purpose of network hardening in network security?",
+    options: [
+      "To reduce the attack surface and strengthen security defenses",
+      "To monitor network traffic for suspicious activity",
+      "To assign IP addresses dynamically",
+      "To provide physical layer connectivity",
+    ],
+    correctAnswer:
+      "To reduce the attack surface and strengthen security defenses",
+  },
+
+  {
+    question:
+      "Which security mechanism is used to protect sensitive data by ensuring that only authorized users can access it?",
+    options: [
+      "Access control",
+      "Firewall",
+      "Intrusion Detection System (IDS)",
+      "Intrusion Prevention System (IPS)",
+    ],
+    correctAnswer: "Access control",
   },
 
   // Add more questions here...
@@ -100,7 +447,9 @@ const IndexPage = () => {
         </h1>
         {questions.map((question, index) => (
           <div key={index} className="border p-4 rounded-md mb-4">
-            <h4 className="font-semibold text-xl mb-2">Q.{index + 1} {question.question}</h4>
+            <h4 className="font-semibold text-xl mb-2">
+              Q.{index + 1} {question.question}
+            </h4>
             <div className="flex flex-col ml-2 space-y-4">
               {question.options.map((option, optionIndex) => (
                 <label

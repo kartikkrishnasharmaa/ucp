@@ -4,14 +4,228 @@ import Head from "next/head";
 
 const questions = [
   {
-    question: "",
+    question:
+      "What is the first step in troubleshooting a network connectivity issue?",
     options: [
-      "",
-      "",
-      "",
-      ""  
+      "Identifying the problem",
+      "Checking the physical connections",
+      "Rebooting the router",
+      "Contacting the ISP",
     ],
-    correctAnswer: "",
+    correctAnswer: "Identifying the problem",
+  },
+
+  {
+    question:
+      "What tool is commonly used to test network connectivity between two devices?",
+    options: ["Ping", "Traceroute", "Netstat", "Nmap"],
+    correctAnswer: "Ping",
+  },
+
+  {
+    question: "What does the 'ping' command do?",
+    options: [
+      "Sends ICMP echo requests to test network connectivity",
+      "Maps the route that packets take across a network",
+      "Monitors network traffic in real-time",
+      "Scans for open ports on a remote device",
+    ],
+    correctAnswer: "Sends ICMP echo requests to test network connectivity",
+  },
+
+  {
+    question: "What does the 'tracert' (or 'traceroute') command do?",
+    options: [
+      "Displays the route that packets take across a network",
+      "Tests network connectivity by sending ICMP echo requests",
+      "Monitors network traffic in real-time",
+      "Scans for open ports on a remote device",
+    ],
+    correctAnswer: "Displays the route that packets take across a network",
+  },
+
+  {
+    question:
+      "What is the purpose of using a network sniffer (packet analyzer) during troubleshooting?",
+    options: [
+      "To capture and analyze network traffic",
+      "To test network connectivity by sending ICMP echo requests",
+      "To identify the physical location of network devices",
+      "To monitor network bandwidth usage",
+    ],
+    correctAnswer: "To capture and analyze network traffic",
+  },
+
+  {
+    question: "What is the common cause of slow network performance?",
+    options: [
+      "Network congestion",
+      "Physical damage to network cables",
+      "Outdated router firmware",
+      "Incorrect DNS settings",
+    ],
+    correctAnswer: "Network congestion",
+  },
+
+  {
+    question:
+      "What could be a reason for intermittent network connectivity issues?",
+    options: [
+      "Wireless interference",
+      "Incorrect IP address assignment",
+      "Power outage",
+      "Firewall misconfiguration",
+    ],
+    correctAnswer: "Wireless interference",
+  },
+
+  {
+    question:
+      "What is the purpose of checking firewall settings during network troubleshooting?",
+    options: [
+      "To ensure that the firewall is not blocking network traffic",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network bandwidth usage",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer:
+      "To ensure that the firewall is not blocking network traffic",
+  },
+
+  {
+    question:
+      "What tool is commonly used to detect unauthorized devices on a network?",
+    options: ["Network scanner", "Packet sniffer", "Ping", "Traceroute"],
+    correctAnswer: "Network scanner",
+  },
+
+  {
+    question:
+      "What is the purpose of checking DNS settings during network troubleshooting?",
+    options: [
+      "To ensure that domain names are resolved correctly to IP addresses",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer:
+      "To ensure that domain names are resolved correctly to IP addresses",
+  },
+  {
+    question: "What is the primary purpose of performing a loopback test?",
+    options: [
+      "To verify that a network device's hardware and software are functioning correctly",
+      "To monitor network traffic in real-time",
+      "To test network connectivity by sending ICMP echo requests",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer:
+      "To verify that a network device's hardware and software are functioning correctly",
+  },
+
+  {
+    question:
+      "What is the purpose of using a cable tester during network troubleshooting?",
+    options: [
+      "To check for faulty Ethernet cables",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer: "To check for faulty Ethernet cables",
+  },
+
+  {
+    question:
+      "What is a common symptom of a DNS (Domain Name System) misconfiguration?",
+    options: [
+      "Failure to access websites by domain name",
+      "Slow network performance",
+      "Intermittent network connectivity",
+      "Loss of power to network devices",
+    ],
+    correctAnswer: "Failure to access websites by domain name",
+  },
+
+  {
+    question: "What does the 'arp' command do?",
+    options: [
+      "Displays the ARP cache",
+      "Tests network connectivity by sending ICMP echo requests",
+      "Monitors network traffic in real-time",
+      "Scans for open ports on a remote device",
+    ],
+    correctAnswer: "Displays the ARP cache",
+  },
+
+  {
+    question:
+      "What is the purpose of analyzing network logs during troubleshooting?",
+    options: [
+      "To identify patterns or anomalies in network behavior",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer: "To identify patterns or anomalies in network behavior",
+  },
+
+  {
+    question: "What could be a cause of frequent network disconnections?",
+    options: [
+      "Faulty network hardware",
+      "Slow network performance",
+      "Incorrect DNS settings",
+      "Power outage",
+    ],
+    correctAnswer: "Faulty network hardware",
+  },
+
+  {
+    question: "What is the purpose of a network audit during troubleshooting?",
+    options: [
+      "To assess the overall health and performance of a network",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer: "To assess the overall health and performance of a network",
+  },
+
+  {
+    question:
+      "What is the purpose of a bandwidth test during network troubleshooting?",
+    options: [
+      "To measure the available bandwidth of a network connection",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer: "To measure the available bandwidth of a network connection",
+  },
+
+  {
+    question: "What is the primary cause of network collisions?",
+    options: [
+      "Multiple devices attempting to transmit data simultaneously",
+      "Faulty network cables",
+      "Incorrect DNS settings",
+      "Slow network performance",
+    ],
+    correctAnswer:
+      "Multiple devices attempting to transmit data simultaneously",
+  },
+
+  {
+    question:
+      "What is the purpose of a firmware update for network devices during troubleshooting?",
+    options: [
+      "To fix known issues and improve device performance",
+      "To test network connectivity by sending ICMP echo requests",
+      "To monitor network traffic in real-time",
+      "To identify the physical location of network devices",
+    ],
+    correctAnswer: "To fix known issues and improve device performance",
   },
 
   // Add more questions here...
@@ -100,7 +314,9 @@ const IndexPage = () => {
         </h1>
         {questions.map((question, index) => (
           <div key={index} className="border p-4 rounded-md mb-4">
-            <h4 className="font-semibold text-xl mb-2">Q.{index + 1} {question.question}</h4>
+            <h4 className="font-semibold text-xl mb-2">
+              Q.{index + 1} {question.question}
+            </h4>
             <div className="flex flex-col ml-2 space-y-4">
               {question.options.map((option, optionIndex) => (
                 <label

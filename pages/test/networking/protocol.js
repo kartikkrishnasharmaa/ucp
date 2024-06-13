@@ -4,16 +4,183 @@ import Head from "next/head";
 
 const questions = [
   {
-    question: "",
-    options: [
-      "",
-      "",
-      "",
-      ""  
-    ],
-    correctAnswer: "",
+    question:
+      "Which protocol is used for transferring web pages from a web server to a client's web browser?",
+    options: ["HTTP", "FTP", "SMTP", "SSH"],
+    correctAnswer: "HTTP",
   },
 
+  {
+    question: "What is the primary function of the TCP protocol?",
+    options: [
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To route packets between networks",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer:
+      "To establish and maintain a reliable connection between two devices",
+  },
+
+  {
+    question: "Which protocol is responsible for sending and receiving emails?",
+    options: ["SMTP", "HTTP", "FTP", "UDP"],
+    correctAnswer: "SMTP",
+  },
+
+  {
+    question: "What is the purpose of the DHCP protocol?",
+    options: [
+      "To assign IP addresses dynamically to devices on a network",
+      "To translate domain names to IP addresses",
+      "To route packets between networks",
+      "To establish secure connections between networks",
+    ],
+    correctAnswer: "To assign IP addresses dynamically to devices on a network",
+  },
+
+  {
+    question:
+      "Which protocol is commonly used for securely accessing remote systems over a network?",
+    options: ["SSH", "HTTP", "SMTP", "FTP"],
+    correctAnswer: "SSH",
+  },
+
+  {
+    question: "What is the primary function of the DNS protocol?",
+    options: [
+      "To translate domain names to IP addresses",
+      "To establish and maintain a reliable connection between two devices",
+      "To route packets between networks",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To translate domain names to IP addresses",
+  },
+
+  {
+    question: "Which protocol is used for transferring files over a network?",
+    options: ["FTP", "HTTP", "SMTP", "SSH"],
+    correctAnswer: "FTP",
+  },
+
+  {
+    question: "What is the purpose of the ICMP protocol?",
+    options: [
+      "To send error messages and operational information",
+      "To translate domain names to IP addresses",
+      "To establish and maintain a reliable connection between two devices",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To send error messages and operational information",
+  },
+
+  {
+    question:
+      "Which protocol is responsible for managing and controlling network devices?",
+    options: ["SNMP", "HTTP", "SMTP", "FTP"],
+    correctAnswer: "SNMP",
+  },
+
+  {
+    question: "What is the purpose of the POP3 protocol?",
+    options: [
+      "To retrieve emails from a mail server",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To retrieve emails from a mail server",
+  },
+  {
+    question:
+      "Which protocol is used for transferring files securely over a network?",
+    options: ["SFTP", "HTTP", "SMTP", "SSH"],
+    correctAnswer: "SFTP",
+  },
+
+  {
+    question: "What is the primary function of the ARP protocol?",
+    options: [
+      "To map IP addresses to MAC addresses",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To map IP addresses to MAC addresses",
+  },
+
+  {
+    question:
+      "Which protocol is used for securely accessing websites over a network?",
+    options: ["HTTPS", "HTTP", "FTP", "SSH"],
+    correctAnswer: "HTTPS",
+  },
+
+  {
+    question:
+      "What is the purpose of the ICMP protocol's 'Echo Request' message?",
+    options: [
+      "To check network connectivity by sending a ping request",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To check network connectivity by sending a ping request",
+  },
+
+  {
+    question:
+      "Which protocol is commonly used for managing and transferring files between networked computers?",
+    options: ["FTP", "HTTP", "SMTP", "SSH"],
+    correctAnswer: "FTP",
+  },
+
+  {
+    question: "What is the purpose of the NTP protocol?",
+    options: [
+      "To synchronize the time on network devices",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To synchronize the time on network devices",
+  },
+
+  {
+    question:
+      "Which protocol is used for securely transferring hypertext documents over a network?",
+    options: ["HTTPS", "HTTP", "FTP", "SSH"],
+    correctAnswer: "HTTPS",
+  },
+
+  {
+    question: "What is the primary function of the RDP protocol?",
+    options: [
+      "To provide remote desktop access to a computer",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To provide remote desktop access to a computer",
+  },
+
+  {
+    question:
+      "Which protocol is used for transferring emails between mail servers?",
+    options: ["SMTP", "HTTP", "FTP", "SSH"],
+    correctAnswer: "SMTP",
+  },
+
+  {
+    question: "What is the purpose of the SNMP protocol?",
+    options: [
+      "To manage and monitor network devices",
+      "To establish and maintain a reliable connection between two devices",
+      "To translate domain names to IP addresses",
+      "To assign IP addresses dynamically",
+    ],
+    correctAnswer: "To manage and monitor network devices",
+  },
   // Add more questions here...
 ];
 
@@ -100,7 +267,9 @@ const IndexPage = () => {
         </h1>
         {questions.map((question, index) => (
           <div key={index} className="border p-4 rounded-md mb-4">
-            <h4 className="font-semibold text-xl mb-2">Q.{index + 1} {question.question}</h4>
+            <h4 className="font-semibold text-xl mb-2">
+              Q.{index + 1} {question.question}
+            </h4>
             <div className="flex flex-col ml-2 space-y-4">
               {question.options.map((option, optionIndex) => (
                 <label

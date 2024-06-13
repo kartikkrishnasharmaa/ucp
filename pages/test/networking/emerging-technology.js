@@ -4,16 +4,236 @@ import Head from "next/head";
 
 const questions = [
   {
-    question: "",
+    question: "What is the primary objective of edge computing?",
     options: [
-      "",
-      "",
-      "",
-      ""  
+      "To centralize data storage",
+      "To minimize latency",
+      "To reduce energy consumption",
+      "To increase server capacity",
     ],
-    correctAnswer: "",
+    correctAnswer: "To minimize latency",
   },
 
+  {
+    question:
+      "Which technology allows for the creation of decentralized autonomous organizations (DAOs)?",
+    options: [
+      "Blockchain",
+      "Artificial intelligence",
+      "Quantum computing",
+      "Internet of Things",
+    ],
+    correctAnswer: "Blockchain",
+  },
+
+  {
+    question:
+      "What is the main advantage of 5G technology compared to its predecessors?",
+    options: [
+      "Higher data transfer rates",
+      "Lower network coverage",
+      "Reduced energy consumption",
+      "Decreased device compatibility",
+    ],
+    correctAnswer: "Higher data transfer rates",
+  },
+
+  {
+    question:
+      "Which emerging technology is expected to revolutionize the healthcare industry by enabling personalized treatment?",
+    options: [
+      "Blockchain",
+      "Quantum computing",
+      "Artificial intelligence",
+      "Virtual reality",
+    ],
+    correctAnswer: "Artificial intelligence",
+  },
+
+  {
+    question:
+      "What is the primary application of augmented reality (AR) technology?",
+    options: [
+      "Gaming",
+      "Data encryption",
+      "Predictive analytics",
+      "Natural language processing",
+    ],
+    correctAnswer: "Gaming",
+  },
+
+  {
+    question: "Which technology is at the core of self-driving cars?",
+    options: [
+      "Quantum computing",
+      "Artificial intelligence",
+      "Internet of Things",
+      "Blockchain",
+    ],
+    correctAnswer: "Artificial intelligence",
+  },
+
+  {
+    question: "What is the primary purpose of quantum computing?",
+    options: [
+      "To increase processing speed",
+      "To improve data security",
+      "To minimize energy consumption",
+      "To enhance cloud storage",
+    ],
+    correctAnswer: "To increase processing speed",
+  },
+  {
+    question:
+      "Which technology allows for the creation of digital twins, virtual representations of physical objects or systems?",
+    options: [
+      "Quantum computing",
+      "Blockchain",
+      "Artificial intelligence",
+      "Internet of Things",
+    ],
+    correctAnswer: "Internet of Things",
+  },
+
+  {
+    question:
+      "What is the primary application of generative adversarial networks (GANs)?",
+    options: [
+      "Natural language processing",
+      "Image synthesis",
+      "Speech recognition",
+      "Data compression",
+    ],
+    correctAnswer: "Image synthesis",
+  },
+  {
+    question: "Which technology enables the creation of smart contracts?",
+    options: [
+      "Blockchain",
+      "Artificial intelligence",
+      "Quantum computing",
+      "Internet of Things",
+    ],
+    correctAnswer: "Blockchain",
+  },
+
+  {
+    question: "What is the primary advantage of neuromorphic computing?",
+    options: [
+      "High energy efficiency",
+      "Rapid data transfer",
+      "Massive storage capacity",
+      "Universal compatibility",
+    ],
+    correctAnswer: "High energy efficiency",
+  },
+
+  {
+    question:
+      "Which technology is essential for the development of virtual reality (VR) applications?",
+    options: [
+      "Blockchain",
+      "Artificial intelligence",
+      "Internet of Things",
+      "Advanced optics and displays",
+    ],
+    correctAnswer: "Advanced optics and displays",
+  },
+
+  {
+    question:
+      "What is the primary benefit of using drones equipped with AI algorithms?",
+    options: [
+      "Enhanced data security",
+      "Reduced environmental impact",
+      "Improved efficiency in data collection",
+      "Higher battery life",
+    ],
+    correctAnswer: "Improved efficiency in data collection",
+  },
+
+  {
+    question:
+      "Which technology is crucial for enabling seamless communication between IoT devices?",
+    options: [
+      "Blockchain",
+      "Artificial intelligence",
+      "Quantum computing",
+      "Wireless sensor networks",
+    ],
+    correctAnswer: "Wireless sensor networks",
+  },
+
+  {
+    question:
+      "What is the primary application of natural language processing (NLP)?",
+    options: [
+      "Cryptocurrency mining",
+      "Language translation",
+      "Data encryption",
+      "Quantum computing",
+    ],
+    correctAnswer: "Language translation",
+  },
+
+  {
+    question:
+      "Which technology is used to enhance cybersecurity by identifying and responding to threats in real-time?",
+    options: [
+      "Quantum computing",
+      "Blockchain",
+      "Artificial intelligence",
+      "Internet of Things",
+    ],
+    correctAnswer: "Artificial intelligence",
+  },
+
+  {
+    question:
+      "What is the primary advantage of using biometric authentication?",
+    options: [
+      "Ease of use",
+      "High scalability",
+      "Resistance to phishing attacks",
+      "Low cost",
+    ],
+    correctAnswer: "Resistance to phishing attacks",
+  },
+
+  {
+    question:
+      "Which emerging technology is focused on creating sustainable energy solutions?",
+    options: [
+      "Blockchain",
+      "Quantum computing",
+      "Artificial intelligence",
+      "Renewable energy technology",
+    ],
+    correctAnswer: "Renewable energy technology",
+  },
+
+  {
+    question: "What is the primary purpose of using 3D printing technology?",
+    options: [
+      "Virtual reality simulation",
+      "Mass production of electronics",
+      "Rapid prototyping",
+      "Blockchain verification",
+    ],
+    correctAnswer: "Rapid prototyping",
+  },
+
+  {
+    question:
+      "Which technology is expected to revolutionize the finance industry by enabling secure and transparent transactions?",
+    options: [
+      "Blockchain",
+      "Quantum computing",
+      "Artificial intelligence",
+      "Internet of Things",
+    ],
+    correctAnswer: "Blockchain",
+  },
   // Add more questions here...
 ];
 
@@ -100,7 +320,9 @@ const IndexPage = () => {
         </h1>
         {questions.map((question, index) => (
           <div key={index} className="border p-4 rounded-md mb-4">
-            <h4 className="font-semibold text-xl mb-2">Q.{index + 1} {question.question}</h4>
+            <h4 className="font-semibold text-xl mb-2">
+              Q.{index + 1} {question.question}
+            </h4>
             <div className="flex flex-col ml-2 space-y-4">
               {question.options.map((option, optionIndex) => (
                 <label
