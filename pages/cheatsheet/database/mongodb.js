@@ -36,7 +36,7 @@ export default function Home() {
   // Sample code blocks
   const codeBlocks = [
     {
-      language: "Connect Mongodb Shell",
+      language: "Connect MongoDb Shell",
       code: `mongo # connects to mongodb://127.0.0.1:27017 by default
 
 mongo --host <host> --port <port> -u <user> -p <pwd> # omit the password if you want a prompt
