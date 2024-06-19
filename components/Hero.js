@@ -13,7 +13,10 @@ const Hero = () => {
             </p>
             <p className="inline-block m-2 whitespace-nowrap rounded-xl py-1 bg-blue-700 px-2 text-white ml-2  text-center font-bold text-success-700 hover:shadow-xl hover:transform hover:scale-105 duration-300"><Link href="/interview-question">Interview Preparation</Link>
             </p>
-
+            <p className="inline-block m-2 whitespace-nowrap rounded-xl py-1 bg-blue-700 px-2 text-white ml-2  text-center font-bold text-success-700 hover:shadow-xl hover:transform hover:scale-105 duration-300"><Link href="/test">Test</Link>
+            </p>
+            <p className="inline-block m-2 whitespace-nowrap rounded-xl py-1 bg-blue-700 px-2 text-white ml-2  text-center font-bold text-success-700 hover:shadow-xl hover:transform hover:scale-105 duration-300"><Link href="/cheatsheet">Cheatsheet</Link>
+            </p>
           </div>
 
 
