@@ -37,7 +37,7 @@ export default function Home() {
           property="og:description"
           content="Here are Top NextJs stack interview questions along with their answers."
         />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
       </Head>
       <section id="content-wrapper">
         <div className="row">

@@ -18,8 +18,8 @@ const advertise = () => {
         <meta property="og:image:height" content="150" />
         <meta property="og:title" content="Advertise with us | Unstop Computer" />
         <meta property="og:description" content="Are you looking for a way to reach thousands of coding enthusiasts who are eager to learn new skills and technologies." />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
-                <link rel="icon" href="/favicon.ico" height="50px" width="70px" type="image/x-icon"></link>
+        <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
+                
             </Head>
             <div className="box-border h-full w-auto p-10 m-6 border-4 shadow-xl shadow-cyan-600 hover:shadow-indigo-700">
                 <h1 className='title-font sm:text-4xl text-center text-3xl mb-10 font-medium text-blue-700'>Advertise with us</h1>

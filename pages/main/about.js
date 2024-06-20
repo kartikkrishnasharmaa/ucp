@@ -21,7 +21,7 @@ const about = () => {
         <meta property="og:image:height" content="150" />
         <meta property="og:title" content="About Us | Unstop Computer" />
         <meta property="og:description" content="The website where you can learn how to code from scratch. Whether you are a beginner or an experienced programmer, you will find something useful and interesting on our site. " />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
             </Head>
             <section className="box-border h-full w-auto p-10 m-6 border-4 shadow-xl shadow-cyan-600 hover:shadow-indigo-700">
                 <h1 className='title-font sm:text-4xl text-center text-2xl mb-10 font-medium text-blue-700'>About us | Unstop Computer.in</h1>

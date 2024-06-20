@@ -51,7 +51,7 @@ const contact = () => {
         <meta property="og:image:height" content="150" />
         <meta property="og:title" content="Contact us | Unstop Computer" />
         <meta property="og:description" content="Are you looking for a way to reach thousands of coding enthusiasts who are eager to learn new skills and technologies." />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+                <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
             </Head>
             <div className="flex w-full min-h-screen justify-center items-center">
                 <section class="text-gray-600 body-font relative">

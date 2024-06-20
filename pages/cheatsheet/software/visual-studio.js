@@ -8,7 +8,7 @@ export default function Home() {
             <Head>
                 <title>Computer Science Cheat Sheet - Home | Unstop Computer</title>
                 <meta name="description" content="An Online place where you can write code and test your code in real time without installing any additional softwares." />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/Images/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
                 <meta property="og:type" content="website" />

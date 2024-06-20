@@ -213,7 +213,7 @@ animation: bounce 300ms linear 2s infinite alternate-reverse forwards normal;
           name="description"
           content="An Online place where you can write code and test your code in real time without installing any additional softwares."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta property="og:type" content="website" />
