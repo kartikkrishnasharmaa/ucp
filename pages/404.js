@@ -7,7 +7,7 @@ export default function Custom404() {
      <Head>
             <title>Page Not Found | Unstop Computer</title>
             <meta name="description" content="Page Not found" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/Images/favicon.ico" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#000000" />
             <meta property="og:type" content="Page Not found" />

@@ -108,7 +108,7 @@ Create an email sequence for our new customer onboarding process
           name="description"
           content="This cheat sheet lists out prompts and tips from all over the world on how to use ChatGPT effectively"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta property="og:type" content="website" />

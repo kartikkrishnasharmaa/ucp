@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:image:height" content="150" />
         <meta property="og:title" content="Unstop Computer | Learn Coding Online" />
         <meta property="og:description" content="Learn the essentials of computer programming technologies from the Basic to Advanced topics, along with real life practice examples and useful references at free of cost." />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
       </Head>
       <Hero />
       <Feature />

@@ -20,7 +20,7 @@ export default function Home() {
         <meta property="og:image:height" content="150" />
         <meta property="og:title" content="About Us | Unstop Computer" />
         <meta property="og:description" content="The website where you can learn how to code from scratch. Whether you are a beginner or an experienced programmer, you will find something useful and interesting on our site. " />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/Images/favicon.ico" type="image/x-icon"></link>
             </Head>
             <section id="content-wrapper">
                 <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
