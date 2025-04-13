@@ -5,7 +5,7 @@ import QueLayout from "../../components/QueLayout";
 const GlossaryTable = () => {
   const termsData = [
     {
-      que: "What is Android?",
+      que: "What is Androidd ?",
       ans: "Android is an open-source operating system developed by Google primarily for touchscreen mobile devices such as smartphones and tablets. It is based on the Linux kernel and is designed for user-friendly interaction and customization.",
     },
     {
